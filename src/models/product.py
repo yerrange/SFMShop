@@ -6,3 +6,6 @@ class Product:
     
     def get_total_price(self):
         return self.price * self.quantity
+    
+    def apply_discount(self):
+        pass

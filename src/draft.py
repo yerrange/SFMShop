@@ -1,2 +1,2 @@
-with open('.test.txt', 'w') as file:
-    pass
+x = '123'
+print(f'{x:*^10}')

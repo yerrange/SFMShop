@@ -15,3 +15,9 @@ class Product:
 
     def update_stock():
         pass
+
+    def calculate_shipping():
+        pass
+    
+    def get_category():
+        pass

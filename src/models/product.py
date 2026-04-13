@@ -18,3 +18,6 @@ class Product:
 
     def calculate_shipping():
         pass
+    
+    def get_category():
+        pass

@@ -1,2 +1,1 @@
-with open('.test.txt', 'w') as file:
-    pass
+test = 123123123

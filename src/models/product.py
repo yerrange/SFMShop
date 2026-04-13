@@ -6,8 +6,11 @@ class Product:
     
     def get_total_price(self):
         return self.price * self.quantity
+    
+    def apply_discount(self):
+        pass
 
-    def check_stock():
+    def check_stock(self):
         pass
 
     def update_stock():

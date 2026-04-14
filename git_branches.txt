@@ -1,0 +1,16 @@
+  Test_PR
+  feature/add-discount-system
+  feature/add-inventory-management
+  feature/add-inventory-management_2
+  feature/add-shipping
+  feature/test
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Test_PR
+  remotes/origin/feature/add-discount-system
+  remotes/origin/feature/add-inventory-management
+  remotes/origin/feature/add-inventory-management_2
+  remotes/origin/feature/add-shipping
+  remotes/origin/feature/test
+  remotes/origin/main
+  remotes/origin/yerrange-patch-1

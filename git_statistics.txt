@@ -1,0 +1,201 @@
+commit 43c95c4f8160bf91488410587ab90c507c8a2723
+Author: yerrange <121510808+yerrange@users.noreply.github.com>
+Date:   Mon Apr 13 14:40:53 2026 +0300
+
+    Feature/add shipping (#5)
+    
+    * Добавлен метод calculate_shipping в Product
+    
+    * Добавлен метод get_category в Product
+
+ src/models/product.py | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 918704a6870898932901955a0217b34215ce9f36
+Merge: ca2ef60 a13ae06
+Author: yerrange <121510808+yerrange@users.noreply.github.com>
+Date:   Mon Apr 13 11:03:58 2026 +0300
+
+    Merge pull request #4 from yerrange/feature/add-inventory-management_2
+    
+    Добавлены методы управления складом в класс Product
+
+commit a13ae06ad422accf19929e872ad09b3cd8b361a4
+Merge: e347731 ca2ef60
+Author: yerrange <121510808+yerrange@users.noreply.github.com>
+Date:   Mon Apr 13 11:02:48 2026 +0300
+
+    Merge branch 'main' into feature/add-inventory-management_2
+
+commit e3477316ae5302ecb1bee60c1f957ebf348ea672
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Mon Apr 13 10:55:43 2026 +0300
+
+    Добавлены методы управления складом в класс Product
+
+ src/models/product.py | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit ca2ef609e5383299001e4181154f5a8fa9f2b747
+Author: yerrange <121510808+yerrange@users.noreply.github.com>
+Date:   Sat Apr 11 11:23:20 2026 +0300
+
+    Add testtest.txt with initial content 'TEEEEEST'
+
+ testtest.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 86bc4584d4470c146cc567e14a7852472217e7aa
+Merge: 356ac5a e92231c
+Author: yerrange <121510808+yerrange@users.noreply.github.com>
+Date:   Fri Apr 10 19:25:55 2026 +0300
+
+    Merge pull request #2 from yerrange/feature/add-inventory-management
+    
+    Добавлены методы управления складом в класс Product
+
+commit e92231cfc58e8ebfb475f035f6391aca73a8ab1f
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Fri Apr 10 19:23:06 2026 +0300
+
+    Добавлены методы управления складом в класс Product
+
+ src/draft.py          | 2 +-
+ src/models/product.py | 8 +++++++-
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+
+commit 356ac5ad756925986815f91330cfa66acb1ccb33
+Merge: 69b35f4 a8d3b63
+Author: yerrange <121510808+yerrange@users.noreply.github.com>
+Date:   Fri Apr 10 16:41:16 2026 +0300
+
+    Merge pull request #1 from yerrange/Test_PR
+    
+    test pr restrictions 4
+
+commit a8d3b6372db728126c1b477692b9e7c76e003049
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Fri Apr 10 16:22:14 2026 +0300
+
+    test pr restrictions 4
+
+ src/draft.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 69b35f4f1d7dd45de50eaf68f15e3442a180e73e
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Fri Apr 10 16:15:33 2026 +0300
+
+    test pr restrictions 3
+
+ src/draft.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 05195f4da691061e2a19b706dc25adbec68ad6c7
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Fri Apr 10 16:13:37 2026 +0300
+
+    test pr restrictions 2
+
+ src/draft.py | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit a812d1d9311ad62be04bba11ae2ef8c6cefa5694
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Fri Apr 10 16:05:32 2026 +0300
+
+    test pr restrictions
+
+ src/draft.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit c873ab6bc563cfe782d078c0ee940febe9d7edcf
+Merge: affa468 c1d719d
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Sat Apr 4 15:12:48 2026 +0300
+
+    Merge add_discount branch
+
+commit c1d719d21ffe999cc5f47a25187bcddf9456f97b
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Sat Apr 4 14:59:10 2026 +0300
+
+    Добавлена система скидок в класс Product
+
+ src/models/product.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit affa468a7c8aea9246db2cd74504bf0c7e212cfb
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Sat Apr 4 14:45:36 2026 +0300
+
+    Добавлены уроки блока 2: ООП
+
+ lessons/oop/lesson_15.md | 0
+ lessons/oop/lesson_16.md | 0
+ lessons/oop/lesson_17.md | 0
+ lessons/oop/lesson_18.md | 0
+ lessons/oop/lesson_19.md | 0
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 48ea434012412f755991fda9527626e6c0f0a7ff
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Sat Apr 4 14:40:02 2026 +0300
+
+    Добавлены уроки блока 1: основы Python
+
+ lessons/base/lesson_01.md | 0
+ lessons/base/lesson_02.md | 0
+ lessons/base/lesson_03.md | 0
+ lessons/base/lesson_04.md | 0
+ lessons/base/lesson_05.md | 0
+ lessons/base/lesson_06.md | 0
+ lessons/base/lesson_07.md | 0
+ lessons/base/lesson_08.md | 0
+ lessons/base/lesson_09.md | 0
+ lessons/base/lesson_10.md | 0
+ lessons/base/lesson_11.md | 0
+ lessons/base/lesson_12.md | 0
+ lessons/base/lesson_13.md | 0
+ lessons/base/lesson_14.md | 0
+ 14 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 895f362d1a26cf6f70b4d8b78c79cd212a89cd97
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Sat Apr 4 13:02:37 2026 +0300
+
+    Add hello_friend.txt
+
+ hello_friend.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d59b2ea290922f502e047372a16753f34c54e1c6
+Author: yerrange <stepanvasilyev00@gmail.com>
+Date:   Sat Apr 4 13:01:11 2026 +0300
+
+    Инициализация проекта SFMShop
+
+ README.md                                          |   6 +
+ data/orders.txt                                    |   4 +
+ data/products.txt                                  |   3 +
+ draft_general.py                                   |  28 +
+ orders.txt                                         |   4 +
+ processed_orders.txt                               |   2 +
+ products.txt                                       |   3 +
+ products_with_prices.txt                           |   3 +
+ requirements.txt                                   |   0
+ src/draft.py                                       |   2 +
+ src/main.py                                        | 962 +++++++++++++++++++++
+ src/models/__init__.py                             |   0
+ src/models/order.py                                |  10 +
+ src/models/payment.py                              |  24 +
+ src/models/product.py                              |   8 +
+ src/models/user.py                                 |   7 +
+ src/utils/__init__.py                              |   0
+ src/utils/__pycache__/__init__.cpython-313.pyc     | Bin 0 -> 133 bytes
+ src/utils/__pycache__/calculations.cpython-313.pyc | Bin 0 -> 615 bytes
+ src/utils/__pycache__/validators.cpython-313.pyc   | Bin 0 -> 437 bytes
+ src/utils/calculations.py                          |   8 +
+ src/utils/order_processor.py                       |   3 +
+ src/utils/validators.py                            |  11 +
+ 23 files changed, 1088 insertions(+)

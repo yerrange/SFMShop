@@ -116,3 +116,4 @@ def get_user_orders(conn, user_id):
     except Error as e:
         print(f"Ошибка при получении заказов: {e}")
         return []
+

@@ -1,23 +1,16 @@
+from src.models.exceptions import NegativePriceError, InsufficientStockError, SFMShopException
+
+
 class Product:
+
     def __init__(self, name, price, quantity):
         self.name = name
+        if price < 0:
+            raise NegativePriceError('Цена не может быть отрицательной')
         self.price = price
         self.quantity = quantity
-    
-    def get_total_price(self):
-        return self.price * self.quantity
-    
-    def apply_discount(self):
-        pass
 
-    def check_stock(self):
-        pass
-
-    def update_stock():
-        pass
-
-    def calculate_shipping():
-        pass
-    
-    def get_category():
-        pass
+    def sell(self, amount):
+        if self.quantity < amount:
+            raise InsufficientStockError(f'Товара недостаточно. На складе: {self.quantity}, требуется: {amount}')
+        self.quantity = self.quantity - amount

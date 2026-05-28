@@ -14,3 +14,9 @@ class Product:
         if self.quantity < amount:
             raise InsufficientStockError(f'Товара недостаточно. На складе: {self.quantity}, требуется: {amount}')
         self.quantity = self.quantity - amount
+
+    @classmethod
+    def create_object(cls, data):
+        obj = cls(data[1], int(data[2]), int(data[3]))
+        obj.id = data[0]
+        return obj

@@ -17,3 +17,9 @@ class Order:
         if self.order_id:
             return 'Заказ #' + str(self.order_id) + ' на сумму ' + str(self.total) + ' руб. (Пользователь: ' + user_name + ')'
         return 'Заказ на сумму ' + str(self.total) + ' руб. (Пользователь: ' + user_name + ')'
+    
+    @classmethod
+    def create_object(cls, data):
+        obj = cls(data[1], int(data[2]), int(data[3]))
+        obj.id = data[0]
+        return obj

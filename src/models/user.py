@@ -8,6 +8,8 @@ class User:
 
     @classmethod
     def create_object(cls, data):
-        obj = cls(data[1], data[2])
-        obj.id = data[0]
-        return obj
+        if data:
+            obj = cls(data[1], data[2])
+            obj.id = data[0]
+            return obj
+        return None

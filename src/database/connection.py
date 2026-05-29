@@ -117,7 +117,7 @@ def get_product_by_id(conn, product_id):
 def create_order(conn, user_id, total):
     try:
         with conn:
-            with conn.cursor() as cursor:
+            with conn.cursor(cursor_factory=RealDictCursor) as cursor:
                 cursor.execute(
                     "INSERT INTO orders (user_id, total) VALUES (%s, %s) RETURNING id, user_id, total, created_at;",
                     (user_id, total)
@@ -142,3 +142,19 @@ def get_user_orders(conn, user_id):
     except Error as e:
         print(f"Ошибка при получении заказов: {e}")
         return []
+
+
+def update_product(conn, data, product_id):
+    try:
+        with conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "UPDATE products "
+                    "SET name = %s, price = %s, quantity = %s "
+                    "WHERE id = %s "
+                    "RETURNING id, name, price, quantity;",
+                    (data.name, data.price, data.quantity, product_id)
+                )
+                return cursor.fetchone()
+    except Error as e:
+        print(f"Ошибка при изменении продукта: {e}")

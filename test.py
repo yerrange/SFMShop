@@ -206,5 +206,51 @@ def update_product(product: ProductUpdate, product_id: int):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+def test_api():
+    """Тестирование API"""
 
-# тесты находятся в SFMSHOP/test.py
+    with TestClient(app) as client:
+        response = client.get("/products")
+        assert response.status_code == 200, response.text
+        print("GET /products: OK")
+
+        response = client.get("/products?limit=5&offset=0")
+        assert response.status_code == 200, response.text
+        data = response.json()
+        assert "total" in data
+        assert "products" in data
+        print("GET /products с пагинацией: OK")
+
+        response = client.get("/products/1")
+        assert response.status_code == 200, response.text
+        print("GET /products/1: OK")
+
+        response = client.get("/products/999")
+        assert response.status_code == 404, response.text
+        print("GET /products/999 (404): OK")
+
+        response = client.post("/orders", json={
+            "user_id": 1,
+            "product_id": 2,
+            "quantity": 1,
+        })
+        assert response.status_code == 201, response.text
+        print("POST /orders: OK")
+
+        response = client.put("/products/1", json={
+            "name": "Ноутбук обновленный",
+            "price": "45000.00",
+            "quantity": 10,
+        })
+        assert response.status_code == 200, response.text
+        print("PUT /products/1: OK")
+
+        response = client.delete("/products/10")
+        assert response.status_code == 200, response.text
+        print("DELETE /products/1: OK")
+
+    print("\nВсе тесты пройдены успешно!")
+
+
+if __name__ == '__main__':
+    test_api()

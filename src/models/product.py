@@ -17,6 +17,8 @@ class Product:
 
     @classmethod
     def create_object(cls, data):
-        obj = cls(data[1], int(data[2]), int(data[3]))
-        obj.id = data[0]
-        return obj
+        if data:
+            obj = cls(data[1], int(data[2]), int(data[3]))
+            obj.id = data[0]
+            return obj
+        return None
